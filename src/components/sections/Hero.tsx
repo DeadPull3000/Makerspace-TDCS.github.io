@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import Particles from 'react-tsparticles'
-import { Container, Engine } from 'tsparticles-engine'
+import { Engine } from 'tsparticles-engine'
 import { loadSlim } from 'tsparticles-slim'
 import { motion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
@@ -33,7 +33,7 @@ export default function Hero() {
     await loadSlim(engine)
   }
 
-  const particlesLoaded = (container: Container | undefined) => {
+  const particlesLoaded = async () => {
     // Particles loaded callback
   }
 

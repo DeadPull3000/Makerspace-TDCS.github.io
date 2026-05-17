@@ -1,6 +1,6 @@
-import { forwardRef, useEffect, useRef } from 'react'
+import { useEffect, useRef } from 'react'
 
-const CustomCursor = forwardRef<HTMLDivElement>((_, ref) => {
+const CustomCursor = () => {
   const crosshairRef = useRef<HTMLDivElement>(null)
   const bracketsRef = useRef<HTMLDivElement>(null)
 
@@ -56,8 +56,9 @@ const CustomCursor = forwardRef<HTMLDivElement>((_, ref) => {
       </div>
     </>
   )
-})
+}
 
 CustomCursor.displayName = 'CustomCursor'
 
 export default CustomCursor
+
